@@ -10,6 +10,7 @@ public:
         yinBuffer.resize(bufferSize / 2, 0.0f);
     }
     void setSampleRate(double newSampleRate) { sampleRate = newSampleRate; }
+
     float getPitch(const float* audioData, int numSamples) {
         if (numSamples < bufferSize) return -1.0f;
         for (int tau = 0; tau < bufferSize / 2; ++tau) {

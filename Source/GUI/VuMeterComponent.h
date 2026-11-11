@@ -10,6 +10,7 @@ public:
         g.fillRoundedRectangle(bounds, 6.0f);
         g.setColour(juce::Colour(0xff221b14));
         g.drawRoundedRectangle(bounds, 6.0f, 2.0f);
+
         float angle = juce::jmap(std::clamp(level, 0.0f, 1.0f), -0.7f, 0.7f);
         juce::Point<float> pivot(bounds.getCentreX(), bounds.getBottom() + 10.0f);
         juce::Point<float> needleEnd(pivot.x + std::sin(angle) * (bounds.getHeight() * 0.95f),

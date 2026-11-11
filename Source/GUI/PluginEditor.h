@@ -16,8 +16,19 @@ private:
     OscilloscopeComponent oscilloscope;
     VuMeterComponent leftVuMeter;
     VuMeterComponent rightVuMeter;
+
     juce::Slider micGainKnob;
     juce::Slider thresholdKnob;
     juce::Label titleLabel;
+
+    juce::ComboBox rootKeySelector;
+    juce::ComboBox maqamSelector;
+    juce::Label maqamLabel;
+
+    juce::ComboBox kickNoteSelector;
+    juce::ComboBox snareNoteSelector;
+    juce::ComboBox hiHatNoteSelector;
+    juce::Label kickLabel, snareLabel, hiHatLabel;
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Voxin2AudioProcessorEditor)
 };
